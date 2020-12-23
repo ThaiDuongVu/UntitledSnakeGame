@@ -30,13 +30,13 @@ Any snake that reach 100 score first will win the round.
 
 #### Requirements:
 
-Set username.
-Change username.
-Create a new lobby.
-Join an existing lobby.
-Start game when enough people have joined.
-Snake 🐍 movement.
-Snake eat food 🍕 objects.
-Leaderboard to show each snake's current score.
-Win (or lose) a round.
-Start a new round.
+- Set username.
+- Change username.
+- Create a new lobby.
+- Join an existing lobby.
+- Start game when enough people have joined.
+- Snake 🐍 movement.
+- Snake eat food 🍕 objects.
+- Leaderboard to show each snake's current score.
+- Win (or lose) a round.
+- Start a new round.
