@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.UntitledSnakeGame.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\.idea\.idea.UntitledSnakeGame\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

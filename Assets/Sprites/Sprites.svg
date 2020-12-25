@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="546.85506"
-     inkscape:cy="1495.5967"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="113.17822"
+     inkscape:cy="3289.4153"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -59,7 +59,7 @@
     <g
        inkscape:export-ydpi="25.4"
        inkscape:export-xdpi="25.4"
-       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Head.png"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Snake1_Head.png"
        id="g880">
       <circle
          style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -94,22 +94,29 @@
          r="10" />
     </g>
     <g
-       id="g958">
+       id="g960"
+       transform="matrix(0.98947437,0,0,0.98947334,0.52631408,3.1579812)"
+       style="stroke-width:1.01064"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Snake1_Body.png"
+       inkscape:export-xdpi="20.319986"
+       inkscape:export-ydpi="20.319986">
       <g
-         id="g915">
+         id="g915"
+         style="stroke-width:1.01064">
         <g
            inkscape:export-ydpi="25.4"
            inkscape:export-xdpi="25.4"
            inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Body.png"
-           id="g895">
+           id="g895"
+           style="stroke-width:1.01064">
           <circle
              r="47.5"
              cy="300"
              cx="50"
              id="circle882"
-             style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+             style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5.0532;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <circle
-             style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5.0532;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="circle884"
              cx="50"
              cy="320"
@@ -119,11 +126,11 @@
              cy="280"
              cx="50"
              id="circle890"
-             style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+             style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5.0532;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         </g>
       </g>
       <circle
-         style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:6.06383;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle917"
          cx="50"
          cy="300"
@@ -132,24 +139,23 @@
          cy="320"
          cx="50"
          id="circle919"
-         style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5.0532;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          r="25" />
       <circle
-         style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5.0532;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle921"
          cx="50"
          cy="280"
          r="25" />
     </g>
     <g
-       inkscape:export-ydpi="25.4"
-       inkscape:export-xdpi="25.4"
+       id="g976"
        inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Snake1_Tail.png"
-       transform="translate(0,-7.2380981)"
-       id="g993">
+       inkscape:export-xdpi="15.24"
+       inkscape:export-ydpi="15.24">
       <g
          id="g968"
-         transform="translate(0,157.2381)">
+         transform="translate(0,150)">
         <g
            id="g966"
            inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Body.png"
@@ -176,150 +182,321 @@
         </g>
       </g>
       <circle
-         r="47.5"
-         cy="457.2381"
+         r="46.5"
+         cy="450"
          cx="50"
          id="circle970"
-         style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <circle
          r="25"
          style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle972"
          cx="50"
-         cy="477.2381" />
+         cy="465" />
     </g>
     <rect
        inkscape:export-ydpi="25.4"
        inkscape:export-xdpi="25.4"
-       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_Tongue.png"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Snake1_Tongue.png"
        ry="12.666667"
        y="-147.5"
        x="2.5"
        height="95"
        width="20"
        id="rect943"
-       style="fill:#ee5253;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <g
-       inkscape:export-ydpi="25.4"
-       inkscape:export-xdpi="25.4"
+       style="fill:#0abde3;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <circle
+       style="fill:#48dbfb;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle995"
+       cx="250"
+       cy="150"
+       r="47.5"
        inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_Head.png"
-       id="g1101">
-      <circle
-         r="47.5"
-         cy="150"
-         cx="250"
-         id="circle995"
-         style="fill:#48dbfb;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <circle
-         r="37.5"
-         style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="circle997"
-         cx="250"
-         cy="150" />
-    </g>
-    <g
-       inkscape:export-ydpi="25.4"
        inkscape:export-xdpi="25.4"
+       inkscape:export-ydpi="25.4" />
+    <circle
+       cy="150"
+       cx="250"
+       id="circle997"
+       style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="37.5" />
+    <g
+       id="g1003"
        inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_Body.png"
-       id="g1112">
+       inkscape:export-xdpi="20.32"
+       inkscape:export-ydpi="20.32">
       <g
-         id="g1074">
+         id="g1048"
+         transform="translate(200)">
         <g
-           transform="translate(200)"
-           id="g1048">
-          <g
-             inkscape:export-ydpi="25.4"
-             inkscape:export-xdpi="25.4"
-             inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Body.png"
-             id="g1046">
-            <circle
-               r="47.5"
-               cy="300"
-               cx="50"
-               id="circle1040"
-               style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-            <circle
-               style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="circle1042"
-               cx="50"
-               cy="320"
-               r="25" />
-            <circle
-               r="25"
-               cy="280"
-               cx="50"
-               id="circle1044"
-               style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-          </g>
-        </g>
-        <circle
-           style="fill:#48dbfb;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="circle1050"
-           cx="250"
-           cy="300"
-           r="47.5" />
-        <circle
-           cy="320"
-           cx="250"
-           id="circle1052"
-           style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           r="25" />
-        <circle
-           style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="circle1054"
-           cx="250"
-           cy="280"
-           r="25" />
-      </g>
-    </g>
-    <g
-       inkscape:export-ydpi="25.4"
-       inkscape:export-xdpi="25.4"
-       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_Tail.png"
-       id="g1125">
-      <g
-         transform="translate(200,150)"
-         id="g1084">
-        <g
-           inkscape:export-ydpi="25.4"
-           inkscape:export-xdpi="25.4"
+           id="g1046"
            inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Body.png"
-           id="g1082">
+           inkscape:export-xdpi="25.4"
+           inkscape:export-ydpi="25.4">
           <circle
-             r="47.5"
+             style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle1040"
+             cx="50"
              cy="300"
-             cx="50"
-             id="circle1076"
-             style="fill:#ff9f43;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-          <circle
-             style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             id="circle1078"
-             cx="50"
-             cy="320"
-             r="25" />
+             r="47.5" />
           <circle
              r="25"
-             cy="280"
+             cy="320"
              cx="50"
-             id="circle1080"
+             id="circle1042"
              style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <circle
+             style="fill:#ee5253;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle1044"
+             cx="50"
+             cy="280"
+             r="25" />
         </g>
       </g>
-      <g
-         id="g1115">
-        <circle
-           r="47.5"
-           cy="450"
-           cx="250"
-           id="circle1086"
-           style="fill:#48dbfb;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      </g>
       <circle
-         cy="470"
+         r="47"
+         cy="300"
+         cx="250"
+         id="circle1050"
+         style="fill:#48dbfb;fill-opacity:1;stroke:#222f3e;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="25"
+         style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1052"
+         cx="250"
+         cy="320" />
+      <circle
+         r="25"
+         cy="280"
+         cx="250"
+         id="circle1054"
+         style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g1016"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_Tail.png"
+       inkscape:export-xdpi="15.24"
+       inkscape:export-ydpi="15.24">
+      <circle
+         r="46.5"
+         style="fill:#48dbfb;fill-opacity:1;stroke:#222f3e;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1086"
+         cx="250"
+         cy="450" />
+      <circle
+         cy="465"
          cx="250"
          id="circle1088"
          style="fill:#0abde3;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          r="25" />
+    </g>
+    <rect
+       style="fill:#ff9f43;stroke:#222f3e;stroke-width:4.99999;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1;stroke-opacity:1"
+       id="rect876"
+       width="95.000008"
+       height="95.000008"
+       x="2.499995"
+       y="602.5"
+       ry="16.845818"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake1\Snake1_Body.png"
+       inkscape:export-xdpi="25.4"
+       inkscape:export-ydpi="25.4" />
+    <rect
+       style="fill:#ee5253;fill-opacity:1;stroke:#222f3e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect898"
+       width="20"
+       height="95"
+       x="239.83534"
+       y="-147.5"
+       ry="12.666667"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_Tongue.png"
+       inkscape:export-xdpi="25.4"
+       inkscape:export-ydpi="25.4" />
+    <g
+       inkscape:export-ydpi="25.4"
+       inkscape:export-xdpi="25.4"
+       id="g896">
+      <rect
+         inkscape:export-ydpi="25.040001"
+         inkscape:export-xdpi="25.040001"
+         y="800"
+         x="0"
+         height="100"
+         width="100"
+         id="rect900"
+         style="fill:#008e66;fill-opacity:1;stroke:none;stroke-width:4.99998;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="25.040001"
+         inkscape:export-xdpi="25.040001"
+         style="fill:#10ac84;fill-opacity:0.5;stroke-width:1"
+         transform="translate(-11.715012,47.215653)"
+         id="g920">
+        <path
+           sodipodi:type="star"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path916"
+           sodipodi:sides="3"
+           sodipodi:cx="-60.476189"
+           sodipodi:cy="773.33929"
+           sodipodi:r1="80.042648"
+           sodipodi:r2="5.032196"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:arg2="-1.2522019"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="-3"
+           inkscape:transform-center-x="-1.926296"
+           inkscape:transform-center-y="0.014776684"
+           transform="matrix(0.0125297,0.06362052,-0.05518979,0.01444372,70.037782,821.12176)"
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z" />
+        <path
+           transform="matrix(-0.0125297,0.06362052,0.05518979,0.01444372,3.3922417,821.12176)"
+           inkscape:transform-center-y="0.014776394"
+           inkscape:transform-center-x="1.9263007"
+           inkscape:randomized="-3"
+           inkscape:rounded="0"
+           inkscape:flatsided="true"
+           sodipodi:arg2="-1.2522019"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:r2="5.032196"
+           sodipodi:r1="80.042648"
+           sodipodi:cy="773.33929"
+           sodipodi:cx="-60.476189"
+           sodipodi:sides="3"
+           id="path918"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           sodipodi:type="star"
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z" />
+      </g>
+      <g
+         id="g1066"
+         transform="translate(-11.715012,-2.7843469)"
+         style="fill:#10ac84;fill-opacity:0.5;stroke-width:1"
+         inkscape:export-xdpi="25.040001"
+         inkscape:export-ydpi="25.040001">
+        <path
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z"
+           transform="matrix(0.0125297,0.06362052,-0.05518979,0.01444372,70.037782,821.12176)"
+           inkscape:transform-center-y="0.014776684"
+           inkscape:transform-center-x="-1.926296"
+           inkscape:randomized="-3"
+           inkscape:rounded="0"
+           inkscape:flatsided="true"
+           sodipodi:arg2="-1.2522019"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:r2="5.032196"
+           sodipodi:r1="80.042648"
+           sodipodi:cy="773.33929"
+           sodipodi:cx="-60.476189"
+           sodipodi:sides="3"
+           id="path1062"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           sodipodi:type="star" />
+        <path
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z"
+           sodipodi:type="star"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path1064"
+           sodipodi:sides="3"
+           sodipodi:cx="-60.476189"
+           sodipodi:cy="773.33929"
+           sodipodi:r1="80.042648"
+           sodipodi:r2="5.032196"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:arg2="-1.2522019"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="-3"
+           inkscape:transform-center-x="1.9263007"
+           inkscape:transform-center-y="0.014776394"
+           transform="matrix(-0.0125297,0.06362052,0.05518979,0.01444372,3.3922417,821.12176)" />
+      </g>
+      <g
+         id="g1078"
+         transform="translate(38.284988,47.215653)"
+         style="fill:#10ac84;fill-opacity:0.5;stroke-width:1"
+         inkscape:export-xdpi="25.040001"
+         inkscape:export-ydpi="25.040001">
+        <path
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z"
+           transform="matrix(0.0125297,0.06362052,-0.05518979,0.01444372,70.037782,821.12176)"
+           inkscape:transform-center-y="0.014776684"
+           inkscape:transform-center-x="-1.926296"
+           inkscape:randomized="-3"
+           inkscape:rounded="0"
+           inkscape:flatsided="true"
+           sodipodi:arg2="-1.2522019"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:r2="5.032196"
+           sodipodi:r1="80.042648"
+           sodipodi:cy="773.33929"
+           sodipodi:cx="-60.476189"
+           sodipodi:sides="3"
+           id="path1074"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           sodipodi:type="star" />
+        <path
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z"
+           sodipodi:type="star"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path1076"
+           sodipodi:sides="3"
+           sodipodi:cx="-60.476189"
+           sodipodi:cy="773.33929"
+           sodipodi:r1="80.042648"
+           sodipodi:r2="5.032196"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:arg2="-1.2522019"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="-3"
+           inkscape:transform-center-x="1.9263007"
+           inkscape:transform-center-y="0.014776394"
+           transform="matrix(-0.0125297,0.06362052,0.05518979,0.01444372,3.3922417,821.12176)" />
+      </g>
+      <g
+         inkscape:export-ydpi="25.040001"
+         inkscape:export-xdpi="25.040001"
+         style="fill:#10ac84;fill-opacity:0.5;stroke-width:1"
+         transform="translate(38.284988,-2.7843469)"
+         id="g1084">
+        <path
+           sodipodi:type="star"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path1080"
+           sodipodi:sides="3"
+           sodipodi:cx="-60.476189"
+           sodipodi:cy="773.33929"
+           sodipodi:r1="80.042648"
+           sodipodi:r2="5.032196"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:arg2="-1.2522019"
+           inkscape:flatsided="true"
+           inkscape:rounded="0"
+           inkscape:randomized="-3"
+           inkscape:transform-center-x="-1.926296"
+           inkscape:transform-center-y="0.014776684"
+           transform="matrix(0.0125297,0.06362052,-0.05518979,0.01444372,70.037782,821.12176)"
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z" />
+        <path
+           transform="matrix(-0.0125297,0.06362052,0.05518979,0.01444372,3.3922417,821.12176)"
+           inkscape:transform-center-y="0.014776394"
+           inkscape:transform-center-x="1.9263007"
+           inkscape:randomized="-3"
+           inkscape:rounded="0"
+           inkscape:flatsided="true"
+           sodipodi:arg2="-1.2522019"
+           sodipodi:arg1="-2.2993994"
+           sodipodi:r2="5.032196"
+           sodipodi:r1="80.042648"
+           sodipodi:cy="773.33929"
+           sodipodi:cx="-60.476189"
+           sodipodi:sides="3"
+           id="path1082"
+           style="fill:#10ac84;fill-opacity:0.5;stroke:none;stroke-width:82.2864;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           sodipodi:type="star"
+           d="M -199.80466,649.02 121.79009,542.34959 99.407121,715.76126 Z" />
+      </g>
     </g>
   </g>
 </svg>
