@@ -18,10 +18,11 @@ public class SnakeBody : MonoBehaviour
         {
             Positions.Add(unit.position);
         }
+
+        Rescale();
     }
 
     /// <summary>
-    /// Unity Event function.
     /// Move each body units forward.
     /// </summary>
     /// <param name="previousHeadPosition">Position previously occupied by snake head</param>
@@ -39,6 +40,16 @@ public class SnakeBody : MonoBehaviour
             Units[i].position = Positions[i];
 
             previousBodyPosition = temp;
+        }
+    }
+
+    public void Rescale()
+    {
+        float scaleGap = 0.5f / Units.Count;
+
+        for (int i = 1; i < Units.Count; i++)
+        {
+            Units[i].transform.localScale = new Vector3(Units[i - 1].transform.localScale.x - scaleGap, Units[i - 1].transform.localScale.y - scaleGap, 1f);
         }
     }
 }

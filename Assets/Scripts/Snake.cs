@@ -6,8 +6,10 @@ public class Snake : MonoBehaviour
     public const float Speed = 5f;
     public Vector2 CurrentDirection { get; private set; } = Vector2.up;
 
-    [SerializeField] private SnakeHead head;
-    [SerializeField] private SnakeBody body;
+    public SnakeHead head;
+    public SnakeBody body;
+
+    [SerializeField] private ParticleSystem firework;
 
     private InputManager inputManager;
 
@@ -27,27 +29,13 @@ public class Snake : MonoBehaviour
     #region Input Handling
 
     /// <summary>
-    /// Change snake direction when a directional button is pressed.
+    /// When a directional button is pressed.
     /// </summary>
     /// <param name="context">Input context</param>
     private void OnDirectionChanged(InputAction.CallbackContext context)
     {
         Vector2 inputDirection = context.ReadValue<Vector2>();
-
-        if (inputDirection == Vector2.left || inputDirection == Vector2.right)
-        {
-            if (CurrentDirection == Vector2.up || CurrentDirection == Vector2.down)
-            {
-                CurrentDirection = inputDirection;
-            }
-        }
-        else
-        {
-            if (CurrentDirection == Vector2.left || CurrentDirection == Vector2.right)
-            {
-                CurrentDirection = inputDirection;
-            }
-        }
+        ChangeDirection(inputDirection);
     }
 
     #endregion
@@ -76,15 +64,51 @@ public class Snake : MonoBehaviour
     }
 
     /// <summary>
+    /// Change snake direction.
+    /// </summary>
+    /// <param name="newDirection">New direction</param>
+    public void ChangeDirection(Vector2 newDirection)
+    {
+        if (newDirection == Vector2.left || newDirection == Vector2.right)
+        {
+            if (CurrentDirection == Vector2.up || CurrentDirection == Vector2.down)
+            {
+                CurrentDirection = newDirection;
+            }
+        }
+        else
+        {
+            if (CurrentDirection == Vector2.left || CurrentDirection == Vector2.right)
+            {
+                CurrentDirection = newDirection;
+            }
+        }
+    }
+
+    /// <summary>
     /// Grow snake's length by 1 unit.
     /// </summary>
     public void Grow()
     {
-        Transform headTransform = head.transform;
-
-        // Spawn a new body unit and and that unit to snake body list.
-        body.Units.Insert(0, Instantiate(body.Units[0], headTransform.position, headTransform.rotation));
-        body.Units[0].parent = body.transform;
+        // Spawn a new body unit and and add that unit to snake body list.
+        body.Units.Insert(0, Instantiate(body.Units[0], head.transform.position, head.transform.rotation));
         body.Positions.Insert(0, body.Units[0].position);
+        body.Units[0].parent = body.transform;
+
+        body.Rescale();
+    }
+
+    /// <summary>
+    /// Snake eats a food object.
+    /// </summary>
+    /// <param name="food">Food object to eat</param>
+    public void CollectFood(Food food)
+    {
+        Grow();
+
+        Instantiate(firework, head.transform.position, head.transform.rotation);
+        food.RandomizePosition();
+
+        CameraShaker.Instance.Shake();
     }
 }

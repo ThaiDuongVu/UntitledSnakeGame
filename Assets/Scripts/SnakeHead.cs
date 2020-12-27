@@ -42,15 +42,15 @@ public class SnakeHead : MonoBehaviour
     #region Trigger Handling
 
     /// <summary>
+    /// Unity Event function.
     /// Handle trigger colliding with other colliders.
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Grow snake by 1 unit when snake eat a food object.
         if (other.CompareTag("Food"))
         {
-            snake.Grow();
+            snake.CollectFood(other.GetComponent<Food>());
         }
     }
 
