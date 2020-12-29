@@ -6,6 +6,7 @@ public class SnakeHead : MonoBehaviour
 
     private Vector2 CurrentPosition { get; set; }
     public Vector2 PreviousPosition { get; set; }
+    public Quaternion PreviousRotation { get; set; }
 
     /// <summary>
     /// Unity Event function.
@@ -36,7 +37,7 @@ public class SnakeHead : MonoBehaviour
         transform.position = new Vector2((int)CurrentPosition.x, (int)CurrentPosition.y);
 
         // Snake head look at moving direction.
-        transform.up = Vector2.Lerp(transform.up, snake.CurrentDirection, 0.1f);
+        transform.up = Vector2.Lerp(transform.up, snake.CurrentDirection, 0.2f);
     }
 
     #region Trigger Handling

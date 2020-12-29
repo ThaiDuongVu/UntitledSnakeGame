@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 7933985466044065592}
   m_Layer: 0
   m_Name: Unit_1
-  m_TagString: Untagged
+  m_TagString: SnakeBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 1604853349}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: SnakeHead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
   - {x: -0.5, y: 0, z: 0}
   m_ShapePathHash: -67531083
   m_Mesh: {fileID: 0}
-  m_InstanceId: -18744
+  m_InstanceId: -78858
 --- !u!114 &1604853349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 2083373187784927682}
   m_Layer: 0
   m_Name: Tail
-  m_TagString: Untagged
+  m_TagString: SnakeBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 1093379900}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: SnakeBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

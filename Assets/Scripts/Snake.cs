@@ -58,8 +58,10 @@ public class Snake : MonoBehaviour
         // If snake head move by 1 unit then snake body move by 1 unit.
         if ((Vector2)head.transform.position != head.PreviousPosition)
         {
-            body.Move(head.PreviousPosition);
+            body.Move(head.PreviousPosition, head.PreviousRotation);
+
             head.PreviousPosition = head.transform.position;
+            head.PreviousRotation = head.transform.rotation;
         }
     }
 
@@ -93,6 +95,8 @@ public class Snake : MonoBehaviour
         // Spawn a new body unit and and add that unit to snake body list.
         body.Units.Insert(0, Instantiate(body.Units[0], head.transform.position, head.transform.rotation));
         body.Positions.Insert(0, body.Units[0].position);
+        body.Rotations.Insert(0, body.Units[0].rotation);
+        
         body.Units[0].parent = body.transform;
 
         body.Rescale();
