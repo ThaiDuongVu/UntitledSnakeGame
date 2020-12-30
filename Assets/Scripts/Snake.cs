@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Photon.Pun;
 
 public class Snake : MonoBehaviour
 {
+    public SnakeType type;
+
     public const float Speed = 5f;
     public Vector2 CurrentDirection { get; private set; } = Vector2.up;
 
     public SnakeHead head;
     public SnakeBody body;
+    public new SnakeName name;
 
     [SerializeField] private ParticleSystem firework;
 
@@ -19,6 +23,9 @@ public class Snake : MonoBehaviour
     /// </summary>
     private void OnEnable()
     {
+        // If not player snake then don't read input
+        if (type == SnakeType.Opponent) return;
+
         inputManager = new InputManager();
         inputManager.Enable();
 
@@ -46,6 +53,9 @@ public class Snake : MonoBehaviour
     /// </summary>
     private void OnDisable()
     {
+        // If not player snake then don't read input
+        if (type == SnakeType.Opponent) return;
+
         inputManager.Disable();
     }
 
@@ -96,7 +106,7 @@ public class Snake : MonoBehaviour
         body.Units.Insert(0, Instantiate(body.Units[0], head.transform.position, head.transform.rotation));
         body.Positions.Insert(0, body.Units[0].position);
         body.Rotations.Insert(0, body.Units[0].rotation);
-        
+
         body.Units[0].parent = body.transform;
 
         body.Rescale();

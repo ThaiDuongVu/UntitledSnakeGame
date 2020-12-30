@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="569.86272"
-     inkscape:cy="-1019.305"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="152.9"
+     inkscape:cy="-2662.798"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -634,5 +634,34 @@
        width="193.99998"
        id="rect897"
        style="fill:#eeeeee;fill-opacity:1;stroke:#cccccc;stroke-width:6.00001;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <rect
+       style="fill:#eeeeee;fill-opacity:1;stroke:#cccccc;stroke-width:6.00002;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="rect899"
+       width="494"
+       height="93.999985"
+       x="3.0000052"
+       y="-562.23212"
+       ry="27.246376"
+       inkscape:export-xdpi="25.4"
+       inkscape:export-ydpi="25.4"
+       inkscape:export-filename="C:\Users\Duong\Documents\Development\Projects\UntitledSnakeGame\Assets\Sprites\Snake2\Snake2_NameBackground.png" />
+    <g
+       inkscape:export-ydpi="25.4"
+       inkscape:export-xdpi="25.4"
+       id="g904">
+      <ellipse
+         style="fill:none;stroke:#cccccc;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path898"
+         cx="25"
+         cy="-725.00006"
+         rx="22.5"
+         ry="22.500002" />
+      <circle
+         cy="-725"
+         cx="25"
+         id="ellipse900"
+         style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         r="10" />
+    </g>
   </g>
 </svg>
