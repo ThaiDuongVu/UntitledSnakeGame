@@ -1,12 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Photon.Pun;
+using Photon.Realtime;
+using ExitGames.Client.Photon;
 
-public class Snake : MonoBehaviour
+public class Snake : MonoBehaviour, IOnEventCallback
 {
     public SnakeType type;
+    public byte changeDirectionID;
+    public byte growID;
+    public byte positionID;
 
-    public const float Speed = 5f;
+    public float speed = 5f;
     public Vector2 CurrentDirection { get; private set; } = Vector2.up;
 
     public SnakeHead head;
@@ -19,10 +24,12 @@ public class Snake : MonoBehaviour
 
     /// <summary>
     /// Unity Event function.
-    /// Initialize input manager on object enabled.
+    /// Initialize input manager and add event listener on object enabled.
     /// </summary>
     private void OnEnable()
     {
+        PhotonNetwork.AddCallbackTarget(this);
+
         // If not player snake then don't read input
         if (type == SnakeType.Opponent) return;
 
@@ -49,14 +56,33 @@ public class Snake : MonoBehaviour
 
     /// <summary>
     /// Unity Event function.
-    /// Stop reading input on object disabled.
+    /// Stop reading input and remove event listener on object disabled.
     /// </summary>
     private void OnDisable()
     {
+        PhotonNetwork.RemoveCallbackTarget(this);
+
         // If not player snake then don't read input
         if (type == SnakeType.Opponent) return;
 
         inputManager.Disable();
+    }
+
+    /// <summary>
+    /// Photon event callback.
+    /// On event received.
+    /// </summary>
+    public void OnEvent(EventData eventData)
+    {
+        if (eventData.Code == growID && (int)eventData.CustomData > body.Units.Count)
+        {
+            Grow();
+        }
+        else if (eventData.Code == positionID)
+        {
+            head.transform.position = new Vector2(((float[])eventData.CustomData)[0], ((float[])eventData.CustomData)[1]);
+            body.Move(new Vector2(((float[])eventData.CustomData)[2], ((float[])eventData.CustomData)[3]), new Quaternion(0f, 0f, ((float[])eventData.CustomData)[4], 0f));
+        }
     }
 
     /// <summary>
@@ -65,10 +91,16 @@ public class Snake : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        if (type == SnakeType.Opponent) return;
+
         // If snake head move by 1 unit then snake body move by 1 unit.
         if ((Vector2)head.transform.position != head.PreviousPosition)
         {
             body.Move(head.PreviousPosition, head.PreviousRotation);
+
+            // Raise new position event
+            float[] positionData = new float[] { head.transform.position.x, head.transform.position.y, head.PreviousPosition.x, head.PreviousPosition.y, head.transform.rotation.z };
+            PhotonNetwork.RaiseEvent(positionID, positionData, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendReliable);
 
             head.PreviousPosition = head.transform.position;
             head.PreviousRotation = head.transform.rotation;
@@ -110,6 +142,9 @@ public class Snake : MonoBehaviour
         body.Units[0].parent = body.transform;
 
         body.Rescale();
+
+        // Raise an event to notify the server that snake grows
+        PhotonNetwork.RaiseEvent(growID, body.Units.Count, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendReliable);
     }
 
     /// <summary>

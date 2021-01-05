@@ -22,8 +22,10 @@ public class SnakeHead : MonoBehaviour
     /// Unity Event function.
     /// Update once per frame.
     /// </summary>
-    private void Update()
+    private void FixedUpdate()
     {
+        if (snake.type == SnakeType.Opponent) return;
+
         Move();
     }
 
@@ -32,12 +34,12 @@ public class SnakeHead : MonoBehaviour
     /// </summary>
     private void Move()
     {
-        CurrentPosition += snake.CurrentDirection * (Snake.Speed * Time.deltaTime);
+        CurrentPosition += snake.CurrentDirection * (snake.speed * Time.deltaTime);
         // Snap snake head position to a grid.
         transform.position = new Vector2((int)CurrentPosition.x, (int)CurrentPosition.y);
 
         // Snake head look at moving direction.
-        transform.up = Vector2.Lerp(transform.up, snake.CurrentDirection, 0.2f);
+        transform.up = Vector2.Lerp(transform.up, snake.CurrentDirection, 0.35f);
     }
 
     #region Trigger Handling

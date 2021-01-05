@@ -35,15 +35,11 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
     private void Start()
     {
         Connect();
-    }
 
-    /// <summary>
-    /// Unity Event function.
-    /// Update once per frame.
-    /// </summary>
-    private void Update()
-    {
+        usernameInput.text = PlayerPrefs.GetString("Username", "");
+        SetUsername();
 
+        Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
     }
 
     /// <summary>
@@ -51,9 +47,9 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
     /// </summary>
     public void Connect()
     {
-        PhotonNetwork.ConnectUsingSettings();
-        PhotonNetwork.GameVersion = gameVersion;
         PhotonNetwork.AddCallbackTarget(this);
+        PhotonNetwork.GameVersion = gameVersion;
+        PhotonNetwork.ConnectUsingSettings();
     }
 
     public void OnConnected()
@@ -99,6 +95,7 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
 
     public void OnCreatedRoom()
     {
+        PhotonNetwork.LoadLevel(1);
         SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
     }
 
@@ -109,6 +106,7 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
 
     public void OnJoinedRoom()
     {
+        PhotonNetwork.LoadLevel(1);
         SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
     }
 
@@ -145,6 +143,7 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
         isUsernameSet = true;
 
         PhotonNetwork.NickName = username;
+        PlayerPrefs.SetString("Username", username);
 
         ShowMessage("Username set to " + username);
     }
@@ -164,6 +163,12 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
         if (string.IsNullOrEmpty(createRoomInput.text))
         {
             ShowMessage("Room name not entered");
+            return;
+        }
+
+        if (!PhotonNetwork.IsConnectedAndReady)
+        {
+            ShowMessage("Not ready bruh!");
             return;
         }
 
@@ -191,6 +196,12 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
         if (string.IsNullOrEmpty(joinRoomInput.text))
         {
             ShowMessage("Room name not entered");
+            return;
+        }
+
+        if (!PhotonNetwork.IsConnectedAndReady)
+        {
+            ShowMessage("Not ready bruh!");
             return;
         }
 

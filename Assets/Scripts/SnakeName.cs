@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using Photon.Pun;
 
 public class SnakeName : MonoBehaviour
 {
@@ -14,15 +13,6 @@ public class SnakeName : MonoBehaviour
     private void Awake()
     {
         text = GetComponent<TextMeshPro>();
-    }
-
-    /// <summary>
-    /// Unity Event function.
-    /// Initialize before first frame update.
-    /// </summary>
-    private void OnEnable()
-    {
-        
     }
 
     /// <summary>

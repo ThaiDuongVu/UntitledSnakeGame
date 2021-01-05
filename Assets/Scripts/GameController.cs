@@ -1,16 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 using Photon.Pun;
-using Photon.Realtime;
-using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] private TMP_Text pendingText;
+    private float countdown = 6f;
+    public byte countdownID;
+    private bool doneCountdown;
+
     [SerializeField] private Snake snake1;
     [SerializeField] private Snake snake2;
     private bool initSnakes;
-
-    private Snake playerSnake;
-    private Snake opponentSnake;
 
     private int joinOrder;
 
@@ -30,39 +32,72 @@ public class GameController : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        // If first person join room
+        // If there's one person in room
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
-            snake1.type = SnakeType.Player;
-            snake2.type = SnakeType.Opponent;
+            // If one person left room then go back to lobby
+            if (doneCountdown)
+            {
+                PhotonNetwork.LeaveRoom();
+                PhotonNetwork.LoadLevel(0);
+                SceneManager.LoadScene("Lobby", LoadSceneMode.Single);
+            }
+            else
+            {
+                snake1.type = SnakeType.Player;
+                snake2.type = SnakeType.Opponent;
 
-            playerSnake = snake1;
-            opponentSnake = snake2;
-
-            if (joinOrder == 0) joinOrder = 1;
-            initSnakes = true;
+                if (joinOrder == 0) joinOrder = 1;
+                initSnakes = true;
+            }
         }
-        // If second person join room
+        // If there are 2 people in room
         else if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
+            StartCountdown();
+
             if (!initSnakes)
             {
                 snake1.type = SnakeType.Opponent;
                 snake2.type = SnakeType.Player;
 
-                playerSnake = snake2;
-                opponentSnake = snake1;
-
                 if (joinOrder == 0) joinOrder = 2;
                 initSnakes = true;
             }
 
-            playerSnake.name.Set(PhotonNetwork.NickName);
-            if (joinOrder == 2) opponentSnake.name.Set(PhotonNetwork.PlayerList[0].NickName);
-            else opponentSnake.name.Set(PhotonNetwork.PlayerList[1].NickName);
+            // Set player name
+            if (joinOrder == 2)
+            {
+                snake2.name.Set(PhotonNetwork.NickName);
+                snake1.name.Set(PhotonNetwork.PlayerList[0].NickName);
+            }
+            else
+            {
+                snake1.name.Set(PhotonNetwork.NickName);
+                snake2.name.Set(PhotonNetwork.PlayerList[1].NickName);
+            }
+        }
+    }
 
-            if (!snake1.gameObject.activeInHierarchy) snake1.gameObject.SetActive(true);
-            if (!snake2.gameObject.activeInHierarchy) snake2.gameObject.SetActive(true);
+    /// <summary>
+    /// Countdown before game starts
+    /// </summary>
+    private void StartCountdown()
+    {
+        if (doneCountdown) return;
+
+        countdown -= Time.deltaTime;
+        pendingText.text = "Players found. Starting game in " + (int)countdown;
+
+        // If countdown is done
+        if (countdown <= 0f)
+        {
+            snake1.gameObject.SetActive(true);
+            snake2.gameObject.SetActive(true);
+
+            pendingText.gameObject.SetActive(false);
+
+            doneCountdown = true;
         }
     }
 }
