@@ -10,6 +10,7 @@ public class Snake : MonoBehaviour, IOnEventCallback
     public byte changeDirectionID;
     public byte growID;
     public byte positionID;
+    public byte collisionID;
 
     public float speed = 5f;
     public Vector2 CurrentDirection { get; private set; } = Vector2.up;
@@ -159,5 +160,17 @@ public class Snake : MonoBehaviour, IOnEventCallback
         food.RandomizePosition();
 
         CameraShaker.Instance.Shake();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("SnakeBody"))
+        {
+            
+        }
+        else if (other.CompareTag("Border"))
+        {
+
+        }
     }
 }

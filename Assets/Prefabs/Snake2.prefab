@@ -517,9 +517,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  changeDirectionID: 3
-  growID: 4
-  positionID: 6
+  changeDirectionID: 5
+  growID: 6
+  positionID: 7
+  collisionID: 8
   speed: 5
   head: {fileID: 1322101020957538478}
   body: {fileID: 1322101020999369207}
@@ -862,7 +863,7 @@ MonoBehaviour:
   - {x: -0.5, y: 0, z: 0}
   m_ShapePathHash: -67531083
   m_Mesh: {fileID: 0}
-  m_InstanceId: -51516
+  m_InstanceId: -3842
 --- !u!114 &1322101020957538478
 MonoBehaviour:
   m_ObjectHideFlags: 0

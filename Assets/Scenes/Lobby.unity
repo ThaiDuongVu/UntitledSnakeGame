@@ -3367,11 +3367,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab5e9cb7b22f814d8fd5d914f794fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftRoomID: 10
   gameVersion: 0.1a
   usernameInput: {fileID: 238505070}
   createRoomInput: {fileID: 586219970}
+  createRoomButton: {fileID: 730822109}
   joinRoomInput: {fileID: 1298881668}
+  joinRoomButton: {fileID: 969398887}
+  joinRandomRoomButton: {fileID: 904073112}
   messageText: {fileID: 2006616652}
   messageAnimator: {fileID: 2006616654}
 --- !u!1 &1546924822

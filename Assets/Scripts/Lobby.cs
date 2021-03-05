@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Photon.Realtime;
@@ -14,7 +15,11 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
     private bool isUsernameSet;
 
     [SerializeField] private TMP_InputField createRoomInput;
+    [SerializeField] private Button createRoomButton;
     [SerializeField] private TMP_InputField joinRoomInput;
+    [SerializeField] private Button joinRoomButton;
+
+    [SerializeField] private Button joinRandomRoomButton;
 
     [SerializeField] private TMP_Text messageText;
     [SerializeField] private Animator messageAnimator;
@@ -40,6 +45,15 @@ public class Lobby : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks
         SetUsername();
 
         Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
+    }
+
+    private void Update()
+    {
+        // Enable/disable button on client connected/disconnected to server
+        createRoomButton.interactable = PhotonNetwork.IsConnectedAndReady;
+        joinRoomButton.interactable = PhotonNetwork.IsConnectedAndReady;
+        joinRandomRoomButton.interactable = PhotonNetwork.IsConnectedAndReady;
+
     }
 
     /// <summary>

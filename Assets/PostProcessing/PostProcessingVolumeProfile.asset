@@ -91,8 +91,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.35
     min: 0
     max: 1
   clamp:
@@ -149,7 +149,7 @@ MonoBehaviour:
     m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: 20
+    m_Value: 40
     min: -100
     max: 100
   colorFilter:
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.45
     min: 0
     max: 1
   smoothness:
